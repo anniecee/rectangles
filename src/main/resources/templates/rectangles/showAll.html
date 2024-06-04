@@ -18,7 +18,7 @@
           <th> </th>
         </tr>
         <tr th:each="rectangle:${rec}">
-            <td>id</td>
+            <td th:text="${rectangle.rid}"></td>
             <td th:text="${rectangle.name}"></td>
             <td th:text="${rectangle.color}"></td>
             <td><a href="url">DELETE</a></td>

@@ -7,7 +7,7 @@ import jakarta.persistence.*;
 public class Rectangle {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private int rid;
     private String name;
     private String color;
     private int width;
@@ -55,12 +55,12 @@ public class Rectangle {
         this.height = height;
     }
 
-    public int getId() {
-        return id;
+    public int getRid() {
+        return rid;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setRid(int rid) {
+        this.rid = rid;
     }
 
     
