@@ -25,7 +25,7 @@
                             </tr>
                             <tr th:each="rectangle:${recs}">
                                 <td th:text="${rectangle.rid}"></td>
-                                <td><a th:href="${rectangle.rid}" th:text="${rectangle.name}"></a></td>
+                                <td><a th:href="@{view/} + ${rectangle.rid}" th:text="${rectangle.name}"></a></td>
                                 <td th:text="${rectangle.color}"></td>
                                 <td><a href="url">DELETE</a></td>
                             </tr>
