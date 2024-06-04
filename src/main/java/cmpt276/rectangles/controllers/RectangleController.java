@@ -30,7 +30,7 @@ public class RectangleController {
         List <Rectangle> rectangles = recRepo.findAll();
         // end of database call
 
-        model.addAttribute("rec", rectangles);
+        model.addAttribute("recs", rectangles);
 
         return "rectangles/showAll";
     }

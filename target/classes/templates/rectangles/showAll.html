@@ -8,22 +8,40 @@
 
 </head>
 <body>
-    <h1>RECTANGLES</h1>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+			<div class="col-md-4">
+                <h1 class="text-center mt-5 mb-4">RECTANGLES</h1>
 
-    <table>
-        <tr>
-          <th>No</th>
-          <th>Name</th>
-          <th>Color</th>
-          <th> </th>
-        </tr>
-        <tr th:each="rectangle:${rec}">
-            <td th:text="${rectangle.rid}"></td>
-            <td th:text="${rectangle.name}"></td>
-            <td th:text="${rectangle.color}"></td>
-            <td><a href="url">DELETE</a></td>
-        </tr>
-    </table>
+                <!-- Table -->
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead class="thead-light">
+                            <tr>
+                            <th>No</th>
+                            <th>Name</th>
+                            <th>Color</th>
+                            <th> </th>
+                            </tr>
+                            <tr th:each="rectangle:${recs}">
+                                <td th:text="${rectangle.rid}"></td>
+                                <td><a th:href="${rectangle.rid}" th:text="${rectangle.name}"></a></td>
+                                <td th:text="${rectangle.color}"></td>
+                                <td><a href="url">DELETE</a></td>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+
+                <!-- Add new button -->
+                <a href="../add.html">
+                    <button type="button" class="btn btn-primary">ADD NEW</button>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+    
       
 </body>
 </html>
