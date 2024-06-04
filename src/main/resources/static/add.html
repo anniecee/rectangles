@@ -12,6 +12,8 @@
 		<div class="row justify-content-center">
 			<div class="col-md-4">
 				<h1 class="text-center mt-5 mb-4">Add New Rectangle</h1>
+
+				<!-- Form -->
 				<form action="/rectangles/add" method="post">
                     
 					<div class="mb-3">
@@ -34,15 +36,20 @@
 						<input type="number" id="height" name="height" class="form-control form-control-lg" 
                             placeholder="Height">
 					</div>
-					<!-- Submit button -->
-                    
-                    <div class="d-grid gap-2">
-                        <input class="btn btn-primary" type="submit" value="SEND"></input>
-                    </div>
 
-                    
+					<!-- Submit button -->
+                    <div class="d-grid gap-2">
+                        <input class="btn btn-primary" type="submit" value="ADD"></input>
+                    </div><br>                 
                     
 				</form>
+
+				<!-- Home button -->
+				<div class="text-center">
+					<a href="/rectangles/view">
+						<button type="button" class="btn btn-primary">HOME</button>
+					</a>
+				</div>  
 			</div>
 		</div>
 	</div>

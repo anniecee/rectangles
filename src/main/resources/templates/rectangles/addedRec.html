@@ -13,11 +13,16 @@
 
                 <h1 class="text-center mt-5 mb-4">Added new rectangle successfully!</h1>
     
-                <!-- Home button -->
+                <!-- New entry & home button -->
                 <div class="text-center">
-                    <a href="/rectangles/view">
-                        <button type="button" class="btn btn-primary">HOME</button>
+                    <a th:href="@{/rectangles/view/} + ${rec.rid}">
+                        <button type="button" class="btn btn-primary">VIEW ADDED RECTANGLE</button>
                     </a>
+
+                    <a href="/rectangles/view">
+                        <button type="button" class="btn btn-primary ml-5">HOME</button>
+                    </a>
+
                 </div>         
         </div>
     </div>
